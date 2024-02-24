@@ -1,0 +1,73 @@
+pipeline {
+    agent {
+        label "jenkins-agent"
+    }
+    tools {
+        jdk 'java17'
+        maven 'maven3'
+    }
+
+    environment {
+        APP_NAME = "ci-cd-pipeline"
+        RELEASE = "1.0.0"
+        DOCKER_USER = "lakhera2014"
+        DOCKER_PASS = 'dockerpass' // Consider using credentialsId instead
+        IMAGE_NAME = "${DOCKER_USER}/${APP_NAME}" // Simplified concatenation
+        IMAGE_TAG = "${RELEASE}-${BUILD_NUMBER}"
+    }
+
+    stages {
+        stage("Workspace Cleanup") {
+            steps {
+                cleanWs()
+            }
+        }
+
+        stage("Checkout from Git") {
+            steps {
+                git branch: 'main', credentialsId: 'github_token', url: 'https://github.com/100daysofdevops/cracking-the-devops-interview.git'
+            }
+        }
+
+        stage("Build Application") {
+            steps {
+                dir('HelloDevOpsProject') {
+                    sh "mvn clean package"
+                }
+            }
+        }
+
+        stage("Test Application") {
+            steps {
+                dir('HelloDevOpsProject') {
+                    sh "mvn test"
+                }
+            }
+        }
+
+        stage("Sonarqube Analysis") {
+            steps {
+                script {
+                    withSonarQubeEnv(credentialsId: 'jenkins-sonarqube-token') { 
+                        sh "mvn sonar:sonar"
+                    }
+                }
+            }
+        }
+
+        stage("Build & Push Docker Image") {
+            steps {
+                script {
+                    docker.withRegistry('',DOCKER_PASS) {
+                        docker_image = docker.build "${IMAGE_NAME}"
+                    }
+
+                    docker.withRegistry('',DOCKER_PASS) {
+                        docker_image.push("${IMAGE_TAG}")
+                        docker_image.push('latest')
+                    }
+                }
+            }
+        }
+    }
+}
