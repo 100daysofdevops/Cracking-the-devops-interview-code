@@ -1,6 +1,7 @@
 What is DevOps………………………………………………………………………………………………………………………………….……..1
 Core Principles of DevOps…………………………………………………………………………………………………………..…………2
- Overview of the DevOps Interview Process………………………………………………………………………………...…….…..4
+Overview of the DevOps Interview Process………………………………………………………………………………...…….…..4
+
 1. Linux
 What is Linux?..........................................................................................................................................................................................8
 1.1 What happens when you type your favorite command (for e.g. ls) on the console……………………………...9
@@ -14,6 +15,7 @@ What is Linux?..................................................................
 1.9 How to secure your Linux system?......................................................................................................................................39
 1.10 Provide guidance on how to troubleshoot a slow server in Linux, offering potential methods and tools
 for identifying and resolving performance issues?.............................................................................................................42
+
 2. Git
 What is Git?..........................................................................................................................................................................................54
 2.1 What are the three stages that a file goes through in Git?......................................................................................55
@@ -26,6 +28,7 @@ What is Git?....................................................................
 2.8 What is a detached HEAD in Git, and how would you handle it?.........................................................................75
 2.9 What is a Git hook, and can you give examples of how you might use one?...................................................78
 2.10 What is Git LFS, and what are its use cases?...............................................................................................................81
+
 3. Docker
 What is Docker?....................................................................................................................................................................................89
 3.1 What are the best practices for using Docker?..................................................................................................................90
@@ -41,6 +44,7 @@ communication across multiple hosts?............................................
 3.9 Discuss the strategies for data persistence in Docker. How do Docker volumes work and what are the
 best practices for managing volumes?......................................................................................................................................114
 3.10 How do you secure Docker containers and the host they run on?....................................................................117
+
 4. Kubernetes
 What is Kubernetes?.......................................................................................................................................................................124
 4.1 Describe the architecture of a Kubernetes cluster. How do the master and node components
@@ -56,6 +60,7 @@ communicate with each other and what protocols are used?........................
 and what is its purpose?.................................................................................................................................................................149
 4.10 Explain what Custom Resources (CRs) and Operators are in Kubernetes. How do they extend
 Kubernetes functionality, and can you provide an example of how you've used them in a project?...........152
+
 5. Terraform
 What is Terraform?...........................................................................................................................................................................159
 5.1 Can you explain some of the most used Terraform commands?............................................................................160
@@ -74,6 +79,7 @@ them?...........................................................................
 and resolving it?...............................................................................................................................................................................184
 5.10 Describe Terraform's approach to immutable infrastructure. How do you handle changes that require
 resource replacement without causing service disruption?.........................................................................................187
+
 6. Shell Scripting
 What is Shell Scripting?..................................................................................................................................................................192
 6.1 Write a shell script for performance monitoring (CPU, Memory, I/O, and Network) with email alert...193
@@ -88,6 +94,7 @@ ensure your scripts are not vulnerable to common security issues like injection 
 6.8 Describe how you would implement error handling in a shell script?............................................................214
 6.9 How do you ensure a shell script is portable across different UNIX/Linux distributions?.....................217
 6.10 How do you perform file and directory operations in a shell script?............................................................219
+
 7. Python
 What is Python for DevOps?......................................................................................................................................................224
 7.1 Regular Expression for DevOps with 4 practical examples………………………………………………………… 226
@@ -99,9 +106,9 @@ What is Python for DevOps?......................................................
 7.7 Parsing Apache logs for IP addresses and saving to CSV…………………………………………………………………242
 7.8 Stop/Start EC2 instance on a scheduled basis to save cost…………………………………………………………...245
 7.9 Rotating IAM Keys on a regular basis using Boto3…………………………………………………………………….…248
-7.10Discuss strategies for developing scalable Python applications that are part of a DevOps workflow.
-How do you ensure your Python applications are maintainable, scalable, and efficiently integrate with
+7.10Discuss strategies for developing scalable Python applications that are part of a DevOps workflow.How do you ensure your Python applications are maintainable, scalable, and efficiently integrate with
 other components of the DevOps ecosystem?.....................................................................................................................251
+
 8. AWS
 What is AWS?.....................................................................................................................................................................................257
 8.1 How would you design a highly available and fault-tolerant architecture on AWS for a mission-critical
@@ -119,6 +126,7 @@ services would you leverage for migration assessment, planning, and execution?..
 achieve different DR objectives like low RTO (Recovery Time Objective) and RPO (Recovery Point
 Objective)?...........................................................................................................................................................................................280
 .10 How would you design a network architecture for a global application in AWS?.......................................283
+
 9. Jenkins
 What is Jenkins?...............................................................................................................................................288
 9.1 How would you define a Jenkins Pipeline and what are the advantages of using a Pipeline over
@@ -141,6 +149,7 @@ Docker)?........................................................................
 plugins you use to manage deployment pipelines...............................................................................................................316
 9.10 Describe a complex issue you encountered with Jenkins and how you went about troubleshooting and
 resolving it............................................................................................................................................................................................319
+
 10. Ansible
 What is Ansible?................................................................................................................................................................................323
 10.1 What are the advantages of dynamic inventories over static ones and how would you implement a
@@ -152,6 +161,7 @@ encrypt entire files or specific variables and how do you use them within a play
 10.4 What strategies can you use to optimize the performance of Ansible playbooks?...................................334
 10.5 What are some scenarios where custom modules are necessary and what languages can you use to
 develop them?....................................................................................................................................................................................336
+
 11. Monitoring
 Introduction to Monitoring in DevOps?..................................................................................................................................342
 11.1 How do you implement a monitoring strategy that scales with your infrastructure and
@@ -164,11 +174,11 @@ techniques are commonly used?...................................................
 employed to minimize false positives and irrelevant alerts?........................................................................................353
 11.5 What are the best practices for log management at scale, and how do they facilitate incident response
 and root cause analysis?................................................................................................................................................................356
+
 12. Projects
 Project 1: Scanning Docker Image with Trivy and GitHub Actions……………………………………………………….360
-Project 2: Building a CI/CD Pipeline with GitHub, Jenkins, Maven, Docker, SonarQube, Kubernetes, and
-ArgoCD……………………………………………………………………………………………………………………………………………364
+Project 2: Building a CI/CD Pipeline with GitHub, Jenkins, Maven, Docker, SonarQube, Kubernetes, and ArgoCD……………………………………………………………………………………………………………………………………………364
 Project 3: Automating Terraform Deployment Using Jenkins……………………………………………………………..399
-Project 4: CI/CD Pipeline for Amazon EKS Using CodeCommit, CodeBuild, CodePipeline, and Elastic
-Container Registry (ECR)………………………………………………………………………………………………………………….408
+Project 4: CI/CD Pipeline for Amazon EKS Using CodeCommit, CodeBuild, CodePipeline, and Elastic Container Registry (ECR)………………………………………………………………………………………………………………….408
+
 13. Bonus: ChatGPT for DevOps …………………………………………………………………………………..………………….428
