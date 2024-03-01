@@ -1,0 +1,174 @@
+What is DevOps………………………………………………………………………………………………………………………………….……..1
+Core Principles of DevOps…………………………………………………………………………………………………………..…………2
+ Overview of the DevOps Interview Process………………………………………………………………………………...…….…..4
+1. Linux
+What is Linux?..........................................................................................................................................................................................8
+1.1 What happens when you type your favorite command (for e.g. ls) on the console……………………………...9
+1.2 Can you please explain the step-by-step process involved in booting up a Linux system?..........................12
+1.3Why is direct interaction between user space and the kernel or hardware restricted?................................16
+1.4 What is the difference between the /proc and /sys filesystems?...........................................................................20
+1.5 Can you explain the differences between SETUID, SETGID, and the Sticky bit?...............................................25
+1.6 What happens when you tupe www.google.com into a browser?..........................................................................28
+1.7 What is the difference between a hard link and a soft link?......................................................................................32
+1.8 What is the different state of process in Linux?..............................................................................................................36
+1.9 How to secure your Linux system?......................................................................................................................................39
+1.10 Provide guidance on how to troubleshoot a slow server in Linux, offering potential methods and tools
+for identifying and resolving performance issues?.............................................................................................................42
+2. Git
+What is Git?..........................................................................................................................................................................................54
+2.1 What are the three stages that a file goes through in Git?......................................................................................55
+2.2 How does Git ensure the integrity of the data in a commit?...................................................................................57
+2.3 What is the difference between merge and rebase?..................................................................................................59
+2.4 How to resolve a merge conflict in git?...........................................................................................................................63
+2.5 How to ignore a file in git?....................................................................................................................................................65
+2.6 How do you revert a commit that has already been pushed to the remote repository?...........................71
+2.7 What is the difference between pull request and fork?...........................................................................................73
+2.8 What is a detached HEAD in Git, and how would you handle it?.........................................................................75
+2.9 What is a Git hook, and can you give examples of how you might use one?...................................................78
+2.10 What is Git LFS, and what are its use cases?...............................................................................................................81
+3. Docker
+What is Docker?....................................................................................................................................................................................89
+3.1 What are the best practices for using Docker?..................................................................................................................90
+3.2 What are the best practices for creating a Dockerfile?.................................................................................................95
+3.3 How do Linux namespaces contribute to container isolation in Docker?...........................................................99
+3.4 What happens when you execute the docker container run command?.............................................................102
+3.5 What is the difference between ENTRYPOINT and CMD?........................................................................................105
+3.6 How much default memory is allocated to your Docker container?....................................................................108
+3.7 Can you explain the differences between Docker Swarm and Kubernetes? Discuss scenarios where you
+would prefer one over the other for container orchestration.........................................................................................110
+3.8 Describe the different types of networks in Docker. How would you configure container-to-container
+communication across multiple hosts?....................................................................................................................................112
+3.9 Discuss the strategies for data persistence in Docker. How do Docker volumes work and what are the
+best practices for managing volumes?......................................................................................................................................114
+3.10 How do you secure Docker containers and the host they run on?....................................................................117
+4. Kubernetes
+What is Kubernetes?.......................................................................................................................................................................124
+4.1 Describe the architecture of a Kubernetes cluster. How do the master and node components
+communicate with each other and what protocols are used?....................................................................................124
+4.2 How does Kubernetes store secrets?..............................................................................................................................127
+4.3 What happens when you execute the kubectl get pod command?....................................................................131
+4.4 What is a Network Policy in Kubernetes and how does It work?.......................................................................134
+4.5 How to give new users/dev restricted access to Kubernetes namespaces?...................................................138
+4.6 What is the difference between Kubernetes Readiness and Liveness Probe?.................................................140
+4.7 What is a headless service and how is it used in a StatefulSet?................................................................................144
+4.8 What purpose does Pod Disruption Budget Serve in Kubernetes?........................................................................147
+4.9 When you create a Kubernetes cluster, it automatically creates a default service. What is this service,
+and what is its purpose?.................................................................................................................................................................149
+4.10 Explain what Custom Resources (CRs) and Operators are in Kubernetes. How do they extend
+Kubernetes functionality, and can you provide an example of how you've used them in a project?...........152
+5. Terraform
+What is Terraform?...........................................................................................................................................................................159
+5.1 Can you explain some of the most used Terraform commands?............................................................................160
+5.2 How does Terraform manage state, and what are the implications of state files in collaborative
+environments? ………………………………………………………………………………………………………………………………..162
+5.3 Describe how you can manage multiple environments (development, staging, production) with
+Terraform?...........................................................................................................................................................................................166
+5.4 How do you import existing resources into terraform using the import block?..........................................170
+5.5 How can you secure sensitive data in Terraform configurations and state files?........................................172
+5.6 How does Terraform handle dependencies between resources and how can you influence the order of
+resource creation, update, or destruction?. …………………………………………………………………………..…………175
+5.7 Describe strategies for scaling Terraform configurations in large enterprises...........................................177
+5.8 What tools and practices do you use for testing and validating Terraform configurations before applying
+them?....................................................................................................................................................................................................180
+5.9 Describe a complex issue you encountered with terraform and how you went about troubleshooting
+and resolving it?...............................................................................................................................................................................184
+5.10 Describe Terraform's approach to immutable infrastructure. How do you handle changes that require
+resource replacement without causing service disruption?.........................................................................................187
+6. Shell Scripting
+What is Shell Scripting?..................................................................................................................................................................192
+6.1 Write a shell script for performance monitoring (CPU, Memory, I/O, and Network) with email alert...193
+6.2 How to Delete Blank Lines from a File?. ……………………………………………………………………………………….199
+6.3 What's the difference between (dot) and source in bash?.......................................................................................201
+6.4 Create a shell script to prevent brute force attacks on the server?....................................................................203
+6.5 Can you explain the exit code in the shell and how it works?...............................................................................207
+6.6 Describe how you would debug and optimize a Bash script for better performance. Include specific flags
+and tools you would use?.............................................................................................................................................................209
+6.7 Discuss best practices for securing Bash scripts. How do you safeguard sensitive information and
+ensure your scripts are not vulnerable to common security issues like injection attacks?...........................211
+6.8 Describe how you would implement error handling in a shell script?............................................................214
+6.9 How do you ensure a shell script is portable across different UNIX/Linux distributions?.....................217
+6.10 How do you perform file and directory operations in a shell script?............................................................219
+7. Python
+What is Python for DevOps?......................................................................................................................................................224
+7.1 Regular Expression for DevOps with 4 practical examples………………………………………………………… 226
+7.2 How to avoid displaying password on screen?..........................................................................................................228
+7.3 How Can You Use Python to Run a Linux Command on a Remote Server?....................................................230
+7.4 How can you write platform-independent scripts in Python?............................................................................233
+7.5 What are the different ways in Python to execute Linux commands?.............................................................237
+7.6 What are the different ways in Python to check if the file exists?......................................................................239
+7.7 Parsing Apache logs for IP addresses and saving to CSV…………………………………………………………………242
+7.8 Stop/Start EC2 instance on a scheduled basis to save cost…………………………………………………………...245
+7.9 Rotating IAM Keys on a regular basis using Boto3…………………………………………………………………….…248
+7.10Discuss strategies for developing scalable Python applications that are part of a DevOps workflow.
+How do you ensure your Python applications are maintainable, scalable, and efficiently integrate with
+other components of the DevOps ecosystem?.....................................................................................................................251
+8. AWS
+What is AWS?.....................................................................................................................................................................................257
+8.1 How would you design a highly available and fault-tolerant architecture on AWS for a mission-critical
+application?.........................................................................................................................................................................................258
+8.2 How to troubleshoot a non-booting instance/unreachable AWS EC2 instance?............................................ 260
+8.3 What strategies would you implement to optimize costs in AWS?..................................................................... .263
+8.4 Explain how you would design a serverless application using AWS services. What are the benefits and
+limitations of using AWS Lambda and Amazon API Gateway in a serverless architecture?............................265
+8.5 How would you scale and optimize the performance of a database in AWS?....................................................268
+8.6 Describe the process and best practices for migrating large-scale workloads to AWS. What tools and
+services would you leverage for migration assessment, planning, and execution?..............................................271
+8.7 How would you integrate AWS with on-premises infrastructure in a hybrid cloud setup?....................274
+8.8 How do you ensure compliance and enhance security in your AWS environment?..................................277
+8.9 Describe your approach to disaster recovery planning in AWS. How would you use AWS services to
+achieve different DR objectives like low RTO (Recovery Time Objective) and RPO (Recovery Point
+Objective)?...........................................................................................................................................................................................280
+.10 How would you design a network architecture for a global application in AWS?.......................................283
+9. Jenkins
+What is Jenkins?...............................................................................................................................................288
+9.1 How would you define a Jenkins Pipeline and what are the advantages of using a Pipeline over
+traditional job-based approaches?...........................................................................................................................................290
+9.2 Can you explain what a Jenkinsfile is and how it contributes to the Pipeline as Code principle? Provide
+an example of a scripted and declarative pipeline syntax..............................................................................................293
+9.3 What strategies would you use to optimize Jenkins Pipeline performance and reduce build times?.296
+9.4 Discuss a few Jenkins plugins you've used to extend its functionality for CI/CD processes. How do you
+decide which plugin to use for a particular requirement?............................................................................................299
+9.5 Compare Jenkins with at least one other CI/CD tool (e.g., GitLab CI, GitHub action). What are the
+advantages and disadvantages of Jenkins compared to these tools?..........................................................................302
+9.6 What are the best practices for securing a Jenkins environment? Discuss measures for authentication,
+authorization, and securing sensitive data............................................................................................................................306
+9.7 Explain how Jenkins supports distributed builds and how you would set up Jenkins to distribute builds
+across multiple nodes………………………………………………………………………………………………………………………309
+9.8 How have you integrated Jenkins with other tools in the software development lifecycle, such as version
+control systems (e.g., Git), build tools (e.g., Maven, Gradle), and containerization platforms (e.g.,
+Docker)?................................................................................................................................................................................................313
+9.9 How do you implement continuous delivery or deployment using Jenkins? Discuss any strategies or
+plugins you use to manage deployment pipelines...............................................................................................................316
+9.10 Describe a complex issue you encountered with Jenkins and how you went about troubleshooting and
+resolving it............................................................................................................................................................................................319
+10. Ansible
+What is Ansible?................................................................................................................................................................................323
+10.1 What are the advantages of dynamic inventories over static ones and how would you implement a
+dynamic inventory script?.............................................................................................................................................................325
+10.2 How does Ansible fit into the IaC paradigm? Discuss best practices for using Ansible in large-scale
+infrastructure management and version control of playbooks.....................................................................................328
+10.3 Describe how Ansible Vault is used to manage sensitive data within Ansible playbooks. How do you
+encrypt entire files or specific variables and how do you use them within a playbook?..................................331
+10.4 What strategies can you use to optimize the performance of Ansible playbooks?...................................334
+10.5 What are some scenarios where custom modules are necessary and what languages can you use to
+develop them?....................................................................................................................................................................................336
+11. Monitoring
+Introduction to Monitoring in DevOps?..................................................................................................................................342
+11.1 How do you implement a monitoring strategy that scales with your infrastructure and
+applications?.......................................................................................................................................................................................344
+11.2 What is the role of distributed tracing in microservices architecture, and how does it differ from
+traditional monitoring?..................................................................................................................................................................347
+11.3 How can anomaly detection be automated in monitoring systems, and what machine learning
+techniques are commonly used?................................................................................................................................................350
+11.4 Discuss the importance of alert fatigue reduction in monitoring systems. What strategies can be
+employed to minimize false positives and irrelevant alerts?........................................................................................353
+11.5 What are the best practices for log management at scale, and how do they facilitate incident response
+and root cause analysis?................................................................................................................................................................356
+12. Projects
+Project 1: Scanning Docker Image with Trivy and GitHub Actions……………………………………………………….360
+Project 2: Building a CI/CD Pipeline with GitHub, Jenkins, Maven, Docker, SonarQube, Kubernetes, and
+ArgoCD……………………………………………………………………………………………………………………………………………364
+Project 3: Automating Terraform Deployment Using Jenkins……………………………………………………………..399
+Project 4: CI/CD Pipeline for Amazon EKS Using CodeCommit, CodeBuild, CodePipeline, and Elastic
+Container Registry (ECR)………………………………………………………………………………………………………………….408
+13. Bonus: ChatGPT for DevOps …………………………………………………………………………………..………………….428
